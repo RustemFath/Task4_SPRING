@@ -2,6 +2,7 @@ package ru.study.t4_spring.service;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import ru.study.t4_spring.annotation.LogTransformation;
 import ru.study.t4_spring.config.LoggerConfig;
 import ru.study.t4_spring.record.LoginRec;
 
@@ -17,6 +18,7 @@ import java.util.List;
 
 @Component
 @Qualifier("accessDateService")
+@LogTransformation(filename = "accDateService.log")
 public class AccessDateService implements Serviceable {
     private final Serviceable nextService;
     private final LoggerConfig config;

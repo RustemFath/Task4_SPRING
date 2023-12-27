@@ -2,6 +2,7 @@ package ru.study.t4_spring.service;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import ru.study.t4_spring.annotation.LogTransformation;
 import ru.study.t4_spring.record.LoginRec;
 import ru.study.t4_spring.utils.Utils;
 
@@ -9,6 +10,7 @@ import java.util.List;
 
 @Component
 @Qualifier("fioService")
+@LogTransformation(filename = "fioService.log")
 public class FioService implements Serviceable {
 
     private final Serviceable nextService;
