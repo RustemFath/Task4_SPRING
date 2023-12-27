@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/t4_spring"
+    username: postgres
+    password: postgres
+    driver-class-name: "org.postgresql.Driver"
+
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: TRACE
+
+loader:
+  in: c:\\share\\source
+  archive: c:\\share\\archive
+
+logger:
+  dir: c:\\share\\logs
