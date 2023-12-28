@@ -1,0 +1,3 @@
+IIIvanov,Ivanov ivan Ivanovich,2023-12-19T09:00:00,mobile
+IIIvanov,Ivanov Ivan ivanovich,2023-12-19T09:15:30,web
+IIIvanov,ivanov Ivan Ivanovich,,pc
